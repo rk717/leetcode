@@ -1,0 +1,27 @@
+https://youtu.be/f45_eF1gmn8
+
+1 -> 2 -> 3 -> 4 -> 5 
+
+如果想改变 3 4 
+则 需要改变 三个 指针
+2 的 next 指针 指向 4
+4 的 next 指针 指向 3
+3 的 next 指针 指向 5
+
+1 2 4 3 5 
+
+D 1 2 3 4 5 
+curr 是 D
+如果 D 的 next 和  D 的 next 的 next 都不是 null，我们就需要 swap
+
+D 2 1 3 4 5 
+这时 curr 在 1， 然后 1 的next 是 3；
+1 的 next next 是 4， 所以 再进行 swap
+
+D 2 1 4 3 5
+这时 curr 在 3， 因为 3 的next 是 5， 但是 3 的next 的 next 是null；
+所以 程序停止
+
+swap(preNode, )
+
+
