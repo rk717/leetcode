@@ -1,0 +1,27 @@
+	
+Create a `Circle` class containing the `x` and `y` coordinates 
+of it's centre as well as it's `radius` in three `float` fields.
+The constructor will take and store those parameters. 
+Add getters for each of those fields.
+
+Override the class' `hashCode()` and `equals()` methods. 
+The `equals()` method will check if two circles are identical, 
+meaning their radius is the same length. 
+It should NOT check for identical centers! 
+(Note: this means that the value of `hashCode()` 
+should also not depend on the coordinates of the centre, 
+since that way it could produce different hashcodes 
+for circles considered equal.)
+
+Create unit tests to test `equals()` and `hashCode` 
+according to our expectations of them.
+(optional but it is a good practice for you)
+
+To make it easy, in hashCode, I use apply this 
+[radius * (1 / ERROR_THRESHOLD)]
+
+and in equals I use this 
+[Math.abs(radius - other.radius) < ERROR_THRESHOLD;]
+
+error is a static double  variable 
+ERROR_THRESHOLD = 0.000_001;

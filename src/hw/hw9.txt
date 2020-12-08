@@ -1,0 +1,52 @@
+1. The Movabe 
+    Write a public geometry. Movable interface. 
+    It declares a move() method that 
+    takes two integer distances(vertical and horizontal)
+    as arguments. It has no return value. 
+
+2. The Figure
+    Write a public geometry. Figure interface. 
+    It extends the above Movable interface with the methods below. 
+    (1). An area() that calculates the area of the figure. 
+    (2). A show() that returns the string representation of the figure. 
+
+3. The Circle
+    Write a public geometry. Circle class that represents a circle. 
+    The class implements the methods of the interface Figure. 
+
+    (1). Declare three private intfields, the radius and the coordinates of the center
+            of the circle respectively. 
+            Make the radius a read-only field using final. 
+    (2). Define a constructor which takes the initial values of the fields
+            and initializes them. 
+    (3). Define the methods of the interface Figure. 
+            These are move(),area() and show(). 
+
+    the show() may produce the following result: Circle at (2,4) radius 5. 
+
+4. The Square
+    Write a public geometry. Square class which represents a square. 
+    The class also implements the methods of the interface Figure. 
+
+    (1).Declare three private int fields, the size of sides 
+        and the coordinates of the upper left corner. 
+        Make the size of sides a read-only field using final. 
+    (2). Define a constructor which takes the initial values of the 
+        fields and initializes them. 
+    (3). implements the methods of the interface Figure. 
+        These are move(), area() and show(). 
+
+    the show() may produce the following result: Square at (2,0) side 4. 
+
+5. The FigureDemo
+    write a FigureDemo class outside of the geometry package. with the following
+    main method( I am providing the main method below, but you need to complete 
+    it by making calling the methods of each object). 
+
+    public static void main(String[] args){
+        Figure f1 = new Square(2, 0, 1); 
+        Figure f2 = new Circle(4, 5, 3); 
+
+        //f1.show(), f1.move(), f1.area()
+        //f2.show(), f2.move(), f2.area()
+    }

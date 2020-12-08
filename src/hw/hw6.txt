@@ -1,0 +1,8 @@
+
+The barista has a public method called `order`, 
+it takes a `Beverage` and a `Guest` 
+as parameters and returns a boolean value. 
+It's false when the `legalAge` of a drink is 18 
+
+
+and the `Guest` isn't an `Adult`
